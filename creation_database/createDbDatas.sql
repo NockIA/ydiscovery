@@ -25,9 +25,9 @@ CREATE TABLE `articles` (
 
 CREATE TABLE `accounts` (
     `accountId` INTEGER NOT NULL AUTO_INCREMENT,
-    `authorId` INTEGER NOT NULL,
+    -- `authorId` INTEGER NOT NULL,
     `email` VARCHAR(50) NOT NULL,
-    `password` VARCHAR(20) NOT NULL,
-    PRIMARY KEY(`accountId`),
-    FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`)
+    `password` VARCHAR(50) NOT NULL,
+    PRIMARY KEY(`accountId`)
+    -- FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`)
 );

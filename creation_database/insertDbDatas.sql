@@ -49,30 +49,30 @@ VALUES
     );
 
 INSERT INTO
-    accounts (email, password, authorId)
+    accounts (email, password)
 VALUES
     (
         "JohnDoe@gmail.com",
-        "password",
-        "1"
+        "password"
+        -- "1"
     );
 
 INSERT INTO
-    accounts (email, password, authorId)
+    accounts (email, password)
 VALUES
     (
         "MikaelOak@gmail.com",
-        "password",
-        "2"
+        "password"
+        -- "2"
     );
 
 INSERT INTO
-    accounts (email, password, authorId)
+    accounts (email, password)
 VALUES
     (
         "ElisaKate@gmail.com",
-        "password",
-        "2"
+        "password"
+        -- "2"
     );
 
 INSERT INTO
