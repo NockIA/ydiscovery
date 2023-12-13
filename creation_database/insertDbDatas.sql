@@ -18,40 +18,61 @@ ALTER TABLE
 INSERT INTO
     authors (
         firstname,
-        lastname,
-        birthDate
+        lastname
     )
 VALUES
     (
         "John",
-        "Doe",
-        "2004-12-01"
+        "Doe"
     );
 
 INSERT INTO
     authors (
         firstname,
-        lastname,
-        birthDate
+        lastname
     )
 VALUES
     (
         "Mikael",
-        "Oak",
-        "1999-05-01"
+        "Oak"
     );
 
 INSERT INTO
     authors (
         firstname,
-        lastname,
-        birthDate
+        lastname
     )
 VALUES
     (
         "Elisa",
-        "Kate",
-        "1980-08-01"
+        "Kate"
+    );
+
+INSERT INTO
+    accounts (email, password, authorId)
+VALUES
+    (
+        "JohnDoe@gmail.com",
+        "password",
+        "1"
+    );
+
+INSERT INTO
+    accounts (email, password, authorId)
+VALUES
+    (
+        "MikaelOak@gmail.com",
+        "password",
+        "2"
+    );
+
+INSERT INTO
+    accounts (email, password, authorId)
+VALUES
+    (
+        "ElisaKate@gmail.com",
+        "password",
+        "2"
     );
 
 INSERT INTO
