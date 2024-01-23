@@ -20,6 +20,7 @@ CREATE TABLE `articles` (
     `content` TEXT NOT NULL,
     FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`),
     PRIMARY KEY (`articleId`)
+     
 );
 
 CREATE TABLE `accounts` (
@@ -30,6 +31,6 @@ CREATE TABLE `accounts` (
     `email` VARCHAR(50) NOT NULL,
     `password` VARCHAR(50) NOT NULL,
     `isAdmin` BOOLEAN NOT NULL,
-    PRIMARY KEY(`accountId`),
-    FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`)
+     FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`),
+    PRIMARY KEY(`accountId`)
 );
