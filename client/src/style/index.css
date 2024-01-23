@@ -1,0 +1,55 @@
+/* ---------------- Fonts ---------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
+/* ---------------- Colors ---------------- */
+
+:root {
+ --background_sign : #F5E3B6;
+ --light_blue : #B6E1E7;
+ --blue : rgb(204, 221, 229);
+ --beige : #BA9380; 
+ --dark_blue : #0A1828;
+ --hero_card_bg: #282323;
+ --gold : #BA9380;
+ --dark_gold : #A57A65;
+ --white: #FFF;
+ --light_gray : #393333;
+ --bg_color: rgba(229, 237, 241, 1);
+ --bg_singlehero_section : rgba(22, 13, 10, 0.90);
+}
+
+/* ---------------- Containers ---------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg_color);
+}
+h1,h2,h3,h4,h5,h6,p {
+  margin: 0;
+  padding: 0;
+}
+
+.columnContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.rowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.alignCenter {
+  align-items: center;
+  justify-content: center;
+}
+
+.absolute_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
