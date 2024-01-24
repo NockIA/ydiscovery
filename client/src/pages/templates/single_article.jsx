@@ -50,7 +50,6 @@ const SingleArticle = () => {
         },
       })
       .then((response) => {
-        console.log(response.data);
         setArticleDatas(response.data.article);
       });
   };
