@@ -13,13 +13,14 @@ CREATE TABLE `authors` (
 CREATE TABLE `articles` (
     `articleId` INTEGER NOT NULL AUTO_INCREMENT,
     `authorId` INTEGER NOT NULL,
-    `title` VARCHAR(20) NOT NULL,
+    `title` VARCHAR(50) NOT NULL,
     `subtitle` VARCHAR(50),
     `publicationDate` DATE NOT NULL,
-    `illustrationLink` VARCHAR(50) NOT NULL,
+    `illustrationLink` VARCHAR(255) NOT NULL,
     `content` TEXT NOT NULL,
     FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`),
     PRIMARY KEY (`articleId`)
+     
 );
 
 CREATE TABLE `accounts` (
@@ -28,8 +29,8 @@ CREATE TABLE `accounts` (
     `firstname` VARCHAR(50) NOT NULL,
     `lastname` VARCHAR(50) NOT NULL,
     `email` VARCHAR(50) NOT NULL,
-    `password` VARCHAR(50) NOT NULL,
+    `password` VARCHAR(255) NOT NULL,
     `isAdmin` BOOLEAN NOT NULL,
-    PRIMARY KEY(`accountId`),
-    FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`)
+     FOREIGN KEY (`authorId`) REFERENCES authors(`authorId`),
+    PRIMARY KEY(`accountId`)
 );
