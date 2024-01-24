@@ -15,7 +15,7 @@ export function SignIn() {
     try {
       await axios
         .post(
-          apiUrl + "login",
+          apiUrl + "auth/login",
           { email: emailController, password: passwordController },
         )
         .then((response) => {

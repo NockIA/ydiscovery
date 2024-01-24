@@ -22,7 +22,7 @@ const AddArticle = () => {
     ) {
       await axios
         .post(
-          apiUrl + "createArticle",
+          apiUrl + "articles/add",
           {
             title: titleCtrl,
             subtitle: subtitleCtrl,

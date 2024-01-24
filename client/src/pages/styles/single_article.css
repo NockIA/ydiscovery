@@ -1,0 +1,104 @@
+.container_single_article {
+  margin-top: 100px;
+  padding: 1rem 2vw;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  gap: 2rem;
+}
+
+.container_single_article img {
+  max-height: 50vh;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.267);
+}
+
+.container_single_header {
+  gap: 0.2rem;
+}
+
+.container_single_header h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.container_single_header h3 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+
+.container_panel_single {
+  gap: 1rem;
+}
+
+.container_panel_single button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  border-radius: 5px;
+  width: 5rem;
+  padding: 0.5rem 1rem;
+  box-shadow: 4px 4px 17px rgba(0, 0, 0, 0.267);
+  transition: 0.3s;
+}
+
+.container_panel_single .btn_edit_article {
+  background-color: var(--blue);
+  color: var(--dark_blue);
+}
+
+.container_panel_single .btn_edit_article:hover {
+  background-color: var(--dark_blue);
+  color: var(--blue);
+}
+
+.container_panel_single .btn_delete_article {
+  background-color: var(--dark_blue);
+  color: var(--blue);
+}
+
+.container_panel_single .btn_delete_article:hover {
+  background-color: var(--blue);
+  color: var(--dark_blue);
+}
+
+.separator_article {
+  width: 80%;
+  height: 1px;
+  background-color: var(--light_gray);
+}
+
+.container_single_article p {
+  text-align: left;
+  min-height: 20vh;
+  max-width: 60vw;
+}
+
+.container_single_article input {
+    margin: 1rem 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--dark_blue);
+  outline: none;
+  color: var(--dark_blue);
+  min-width: 20vw;
+}
+
+
+.container_single_article textarea {
+    margin: 1rem 0;
+  background-color: transparent;
+  border: none;
+  border: 2px solid var(--dark_blue);
+  border-radius: 5px;
+  padding: 1rem;
+  outline: none;
+  color: var(--dark_blue);
+  width: 60vw;
+  resize: none;
+}

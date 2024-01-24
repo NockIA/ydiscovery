@@ -1,5 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
-import '../../../style/index.css'
+import { Link, useLocation, useNavigate } from "react-router-dom";
+import "../../../style/index.css";
 import "./desktop_nav.css";
 import AuthService from "../../../services/auth_services";
 import { useEffect, useState } from "react";
@@ -9,6 +9,7 @@ const DesktopNav = () => {
   const _authService = new AuthService();
   const [isConnected, setIsConnected] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (_authService.getCookie()) {
@@ -17,6 +18,11 @@ const DesktopNav = () => {
       setIsConnected(false);
     }
   }, [_authService.getCookie()]);
+
+  const Logout = () => {
+    _authService.deleteCookie();
+    navigate("/signIn");
+  };
 
   return (
     <nav className="container_desktop_nav rowContainer">
@@ -45,9 +51,7 @@ const DesktopNav = () => {
             </Link>
           </>
         )}
-        <Link className="bnt_desktop_nav" to={"/profile"}>
-            profile
-        </Link>
+        <a className="bnt_desktop_nav" onClick={Logout}>Logout</a>
       </div>
     </nav>
   );

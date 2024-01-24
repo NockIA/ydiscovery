@@ -1,5 +1,5 @@
 import "./mobile_nav.css";
-import '../../../style/index.css'
+import "../../../style/index.css";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AuthService from "../../../services/auth_services";
@@ -17,6 +17,11 @@ const MobileNav = () => {
       setIsConnected(false);
     }
   }, [_authService.getCookie()]);
+
+  const Logout = () => {
+    _authService.deleteCookie();
+    navigate("/signIn");
+  };
   return (
     <nav className="container_mobile_nav rowContainer">
       <img className="logo_mobile_nav" src="/logo.png" alt="logo" />
@@ -51,9 +56,7 @@ const MobileNav = () => {
               </Link>
             </>
           )}
-          <Link className="bnt_desktop_nav"  to={"/profile"}>
-            profile
-          </Link>
+          <a onClick={Logout} className="bnt_desktop_nav">Logout</a>
         </div>
       )}
     </nav>
