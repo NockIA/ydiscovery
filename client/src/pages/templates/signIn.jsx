@@ -24,7 +24,7 @@ export function SignIn() {
             navigate("/");
           }
         })
-        .catch((error) => { 
+        .catch((error) => {
           console.error(error.message);
 
         });
@@ -32,26 +32,25 @@ export function SignIn() {
       throw new Error("Error while trying to check if user is valid ");
     }
   };
-  
+
   return (
     <>
-      <div>
       <div className='container'>
-            <div>
-              <label>Email</label>
-              <input type="email" className="form-control"  onChange={(e)=>setEmailController(e.target.value)}/>
-            </div>
-            <div>
-              <label>mot de passe </label>
-              <input type="password" className="form-control" onChange={(e)=>setPasswordController(e.target.value)}/>
-            </div>
-            <div>
-              <button onClick={signIn}>SignIn</button>
-            </div> 
-      
+        <div>
+          <h1>Sign In</h1>
+          <h5>Hello and welcome ! We are delighted to see you again. Please enter your credentials below to access your account.</h5>
         </div>
-         
+        <div className='container_inputs' >
+          <input placeholder='Email' type="email" className="form-control" onChange={(e) => setEmailController(e.target.value)} />
+          <input placeholder='Password' type="password" className="form-control" onChange={(e) => setPasswordController(e.target.value)} />
+          <button onClick={signIn}>SignIn</button>
+        </div>
+        <div className='container-account'>
+          <h5>You do not have an account ?</h5>
+          <Link to={'/signup'}>create a account</Link>
+        </div>
       </div>
+
     </>
   )
 }

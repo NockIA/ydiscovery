@@ -29,30 +29,25 @@ export function SingUp() {
 
   return (
     <>
-      <div>
-        <div className="container">
-          <div>
-            <label>Email</label>
-            <input onChange={(e) => setEmail(e.target.value)} type="email" />
-          </div>
-          <div>
-            <label>Prenom</label>
-            <input onChange={(e) => setPrenom(e.target.value)} type="text" />
-          </div>
-          <div>
-            <label>Nom</label>
-            <input onChange={(e) => setNom(e.target.value)} type="text" />
-          </div>
-          <div>
-            <label>password </label>
-            <input
-              onChange={(e) => setPassword(e.target.value)}
-              type="password"
-            />
-          </div>
-          <div>
-            <button onClick={signUp}>continuer</button>
-          </div>
+      <div className="container">
+        <div>
+          <h1>Sign In</h1>
+          <h5>Hello and welcome ! We are delighted to see you again. Please enter your credentials below to access your account.</h5>
+        </div>
+        <div className='container_inputs' >
+          <input placeholder='Email' onChange={(e) => setEmail(e.target.value)} type="email" />
+          <input placeholder='Firstname' onChange={(e) => setPrenom(e.target.value)} type="text" />
+          <input placeholder='Lastname' onChange={(e) => setNom(e.target.value)} type="text" />
+          <input
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+            type="password" />
+          <button className='button' onClick={signUp}>continuer</button>
+
+        </div>
+        <div className='container-account'>
+          <h5>You do not have an account ?</h5>
+          <Link to={'/signup'}>create a account</Link>
         </div>
       </div>
     </>
