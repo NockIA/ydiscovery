@@ -4,6 +4,7 @@ import { SignIn } from "../pages/templates/signIn";
 import { SingUp } from "../pages/templates/signUp";
 import AddArticle from "../pages/templates/add";
 import SingleArticle from "../pages/templates/single_article";
+import { ErrorPage } from "../pages/templates/error";
 
 function Ways() {
   return (
@@ -15,6 +16,7 @@ function Ways() {
           <Route path="/" element={<Home />} />
           <Route path="/add-article" element={<AddArticle />} />
           <Route path="/single-article/:id" element={<SingleArticle />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </>
