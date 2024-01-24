@@ -31,9 +31,8 @@ const DesktopNav = () => {
         {navLinks.map((link, index) => (
           <Link
             key={index}
-            className={`link ${
-              location.pathname === link.url ? "active_link" : ""
-            }`}
+            className={`link ${location.pathname === link.url ? "active_link" : ""
+              }`}
             to={link.url}
           >
             {link.name}
@@ -51,7 +50,7 @@ const DesktopNav = () => {
             </Link>
           </>
         )}
-        <a className="bnt_desktop_nav" onClick={Logout}>Logout</a>
+        {isConnected && <a className="bnt_desktop_nav" onClick={Logout}>Logout</a>}
       </div>
     </nav>
   );

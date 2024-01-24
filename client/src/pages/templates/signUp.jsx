@@ -4,6 +4,7 @@ import { apiUrl } from "../../utils/api";
 import AuthService from "../../services/auth_services";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export function SingUp() {
   const [Email, setEmail] = useState("");
@@ -47,7 +48,7 @@ export function SingUp() {
         </div>
         <div className='container-account'>
           <h5>You do not have an account ?</h5>
-          <Link to={'/signup'}>create a account</Link>
+          <Link to={'/signin'}>create a account</Link>
         </div>
       </div>
     </>

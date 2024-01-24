@@ -15,7 +15,7 @@ export const ErrorPage = () => {
             <div class='_404'>404</div>
             <div class='_1'>THE PAGE</div>
             <div class='_2'>WAS NOT FOUND</div>
-            <a class='btn' href='#'>BACK TO MARS</a>
+            <a class='btn' href='/'>BACK TO HOME</a>
         </div>
         </>
     )

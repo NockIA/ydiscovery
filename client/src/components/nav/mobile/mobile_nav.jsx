@@ -1,6 +1,6 @@
 import "./mobile_nav.css";
 import "../../../style/index.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import AuthService from "../../../services/auth_services";
 import { navLinks } from "../../../utils/links";
@@ -9,6 +9,7 @@ const MobileNav = () => {
   const _authService = new AuthService();
   const [isConnected, setIsConnected] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (_authService.getCookie()) {

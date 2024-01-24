@@ -43,7 +43,7 @@ export function SignIn() {
         <div className='container_inputs' >
           <input placeholder='Email' type="email" className="form-control" onChange={(e) => setEmailController(e.target.value)} />
           <input placeholder='Password' type="password" className="form-control" onChange={(e) => setPasswordController(e.target.value)} />
-          <button onClick={signIn}>SignIn</button>
+          <button className='button' onClick={signIn}>SignIn</button>
         </div>
         <div className='container-account'>
           <h5>You do not have an account ?</h5>
