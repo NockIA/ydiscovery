@@ -1,0 +1,77 @@
+.container_add_form {
+  border: 2px solid var(--light_gray);
+  border-radius: 10px;
+  padding: 2rem;
+  margin-top: 30px;
+  background-color: var(--blue);
+  gap: 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_add_form h3 {
+  font-size: 14px;
+  color: var(--light_gray);
+  font-weight: 500;
+}
+
+.container_header_add {
+  gap: 0.5rem;
+}
+
+.container_inputs_add {
+  width: 100%;
+  gap: 1rem;
+}
+
+.container_inputs_add .container_input_add {
+  width: 100%;
+  gap: 0.2rem;
+}
+
+.container_input_add input {
+  background-color: var(--bg_color);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_input_add textarea {
+  resize: none;
+  background-color: var(--bg_color);
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 13px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_add_form button {
+  background-color: var(--dark_blue);
+  border: none;
+  outline: none;
+  padding: 1rem 1rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 900;
+  color: var(--blue);
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.container_add_form button:hover {
+  transform: translateY(-3px);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.container_add_form button:not(:hover) {
+    transform: translateY(0px);
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  

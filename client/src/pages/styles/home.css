@@ -1,0 +1,28 @@
+
+.container_home_page {
+  margin-top: 120px;
+}
+
+.container_search_bar {
+  gap: 1.5rem;
+  border-bottom: 2px solid var(--dark_blue);
+  width: fit-content;
+  align-items: center;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+
+.container_search_bar .search_bar {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: var(--dark_blue);
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.container_articles {
+  margin: 2rem 5vw;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+}

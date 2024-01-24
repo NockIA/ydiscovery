@@ -1,0 +1,93 @@
+/* ---------------- Containers ---------------- */
+
+.container_desktop_nav {
+    background-color: var(--dark_blue);
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100%;
+    z-index: 7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .container_desktop_nav_links {
+    gap: 3vw;
+  }
+  
+  .container_btns_nav_desktop {
+    gap: 1rem;
+    padding: 0 2.5vw;
+  }
+  
+  /* ---------------- Texts ---------------- */
+  
+  .container_desktop_nav_links .link {
+    color: var(--light_blue);
+    text-decoration: none;
+    font-family: " Plus Jakarta Sans", sans-serif;
+  }
+  
+  .container_desktop_nav_links .active_link {
+    color: var(--gold);
+  }
+  
+  .container_desktop_nav_links .link:hover {
+    color: var(--gold);
+  }
+  
+  /* ---------------- Images ---------------- */
+  
+  .desktop_logo_nav {
+    width: 5rem;
+    height: 4.5rem;
+    padding: 0 2rem;
+    margin-top: -10px;
+    margin-bottom: -5px;
+    object-fit: contain;
+    filter: contrast(0%) brightness(2000%);
+  }
+  
+  /* ---------------- Buttons ---------------- */
+  
+  .bnt_desktop_nav {
+    padding: 0.5rem 1rem;
+    background-color: var(--beige);
+    border-radius: 5px;
+    border: 2px solid var(--beige);
+    text-decoration: none;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: black;
+    font-weight: 600;
+    align-self: center;
+  }
+  
+  .bnt_desktop_nav:hover {
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--beige);
+  }
+  
+  /* ---------------- Images ---------------- */
+  
+  .user_profile_picture {
+    border-radius: 999px;
+    border: 2px solid var(--beige);
+    height: 2.5rem;
+    object-fit: cover;
+    width: 2.5rem;
+  }
+  
+  .user_profile_picture:hover {
+   transform: scale(0.9);
+   transition: .5s;
+  }
+  
+  .user_profile_picture:not(:hover) {
+    transform: scale(1);
+    transition: .5s;
+   }
+  

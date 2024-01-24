@@ -1,0 +1,119 @@
+/* ---------------- Containers ---------------- */
+
+.container_hero_card {
+    background-color: var(--hero_card_bg);
+    border-radius: 10px;
+    width: 275px;
+    height: 390px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: var(--white);
+    overflow: hidden;
+    box-shadow: 0px 4px 18.1px 10px rgba(0, 0, 0, 0.25); 
+  }
+  
+  .container_hero_card:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: .5s;
+  }
+  
+  .container_hero_card:not(:hover){
+    transform: translateY(0px);
+    transition: .5s;
+  }
+  
+  .container_content_hero_card {
+    padding: 2rem;
+    position: relative;
+    padding-left: 4rem;
+    justify-content: space-between;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .container_content_hero_card .container_id_herocard {
+    gap: 1rem;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    font-size: 12px;
+  }
+  
+  /* ---------------- Images ---------------- */
+  
+  .container_hero_card img {
+    object-fit: cover;
+    height: 10rem;
+    width: 100%;
+    border-bottom: 5px solid var(--light_blue);
+  }
+  
+  /* ---------------- Texts ---------------- */
+  
+  .container_content_hero_card h2 {
+    font-size: 24px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-transform: uppercase;
+  }
+  
+  .container_content_hero_card h5 {
+    font-size: 14px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  .container_id_herocard .id_title_herocard {
+    font-weight: 700;
+  }
+  
+  .container_id_herocard .id_herocard {
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  
+  /* ---------------- Decorations ---------------- */
+  
+  .container_content_hero_card i {
+    display: block;
+    background-color: var(--light_blue);
+    width: 2.125rem;
+    height: 1.4375rem;
+    position: absolute;
+  }
+  
+  .container_content_hero_card .separation {
+    background-color: var(--light_blue);
+    height: 1.5px;
+    width: 100%;
+  }
+  
+  .container_content_hero_card .i1 {
+    top: 2.35rem;
+    left: 0;
+  }
+  .container_content_hero_card .i2 {
+    top: 5.2rem;
+    left: 0;
+  }
+  
+  .container_content_hero_card .i3 {
+    top: 8rem;
+    left: 0;
+  }
+  
+  .container_content_hero_card .i4 {
+    top: 10.75rem;
+    left: 0;
+  }
+  
+  .container_content_hero_card .corner_styled {
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: var(--light_blue);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 30px;
+    width: 30px;
+  }
+  
